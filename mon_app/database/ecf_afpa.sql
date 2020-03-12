@@ -1,0 +1,20 @@
+START TRANSACTION;
+
+DROP DATABASE IF EXISTS ecf_afpa;
+CREATE DATABASE ecf_afpa;
+USE ecf_afpa;
+
+
+DROP TABLE IF EXISTS `inscris`;
+CREATE TABLE `inscris` (
+    `id` INT(10) NOT NULL AUTO_INCREMENT,
+    `lastname` VARCHAR(255) NOT NULL,ç
+    `firstname` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
+    `date_suscribe` DATETIME DEFAULT CURRENT_DATE,
+    `date_update` DATETIME DEFAULT CURRENT_DATE,
+    PRIMARY KEY (`id`)
+)ENGINE=innoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+COMMIT;

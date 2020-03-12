@@ -1,0 +1,7 @@
+des fonctions propre a wordpress permettant de filtré du contenu ou faire des actions.
+
+pour créer un theme wordpress il faut obligatoirement créer un dossier dans le dossier wp-include/theme avec comme nom le nom du théme un index.php et une feuille de style css dans celle pour pour créer un template enfant il faut mettre 'Template: nomduthemeparent'.
+
+pour créer un plugins wordpress il faut obligatoirement créer un dossier avec comme nom le nom du plugins dans le dossier wp-include/plugins créer un fichier avec comme nom le nom du plugin et dans ce fichier créer les fonctions et se servir des hooks wordpress pour créer les shortcode et action ou des filtres
+
+dans le plugins il faut mettre avec la fonction add_menu_page()
